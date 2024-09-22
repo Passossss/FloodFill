@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Queue.iml" filepath="$PROJECT_DIR$/Queue.iml" />
+      <module fileurl="file://$PROJECT_DIR$/FloodFill.iml" filepath="$PROJECT_DIR$/FloodFill.iml" />
     </modules>
   </component>
 </project>
