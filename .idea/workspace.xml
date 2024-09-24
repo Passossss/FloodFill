@@ -5,18 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1e4f27ce-3e04-4f37-a546-ba2101ceeaf7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flood.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Aula/DynamicStack.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Aula/Stack.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/FloodFill.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Image.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Pixels.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Util/List.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Util/Queue.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Queue.iml" beforeDir="false" afterPath="$PROJECT_DIR$/FloodFill.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Aula/Test.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,8 +17,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -63,7 +54,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/gusap/IdeaProjects/RPEC-Estrutura_de_Dados-PUCPR-2024-2",
+    "last_opened_file_path": "C:/Users/gusap/IdeaProjects/FloodFill",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -76,21 +67,6 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\gusap\IdeaProjects\Queue" />
     </key>
-  </component>
-  <component name="RunManager">
-    <configuration default="true" type="JetRunConfigurationType">
-      <module name="FloodFill" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <module name="FloodFill" />
-      <option name="filePath" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -110,7 +86,9 @@
       <updated>1726851794594</updated>
       <workItem from="1726851795699" duration="2581000" />
       <workItem from="1727024060237" duration="103000" />
-      <workItem from="1727024199866" duration="2339000" />
+      <workItem from="1727024199866" duration="2619000" />
+      <workItem from="1727026885797" duration="28000" />
+      <workItem from="1727026982067" duration="5706000" />
     </task>
     <servers />
   </component>
