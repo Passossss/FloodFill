@@ -1,11 +1,11 @@
 package Util;
 
 public class Queue<T> {
-    private Object[] data; // Uso de Object[] para compatibilidade com tipos genéricos
-    private int base = 0, top = 0, size = 5; // Definição inicial do tamanho
+    private Object[] data;
+    private int base = 0, top = 0, size = 5;
 
     public Queue() {
-        data = new Object[size]; // Inicializando o array
+        data = new Object[size];
     }
 
     public void add(T item) {
@@ -27,13 +27,12 @@ public class Queue<T> {
         if (isEmpty()) {
             throw new IllegalStateException("Queue is empty");
         }
-        T temp = (T) data[base]; // Cast explícito
-        base++;
+        T temp = (T) data[base];
         return temp;
     }
 
     public void clear() {
-        data = new Object[size]; // Recriação do array
+        data = new Object[size];
         base = top = 0;
     }
 

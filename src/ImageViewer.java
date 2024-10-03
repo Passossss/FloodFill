@@ -7,7 +7,6 @@ public class ImageViewer extends JFrame {
         setSize(image.getWidth(), image.getHeight());
         setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 
-        // Adiciona a imagem ao JLabel
         JLabel label = new JLabel(new ImageIcon(image));
         add(label);
 

@@ -13,7 +13,7 @@ public class List<T> {
 
     public boolean remove(int pos) {
         if (pos < 0 || pos >= count) {
-            return false;  // Posição inválida
+            return false;
         }
         data.remove(pos);
         count--;

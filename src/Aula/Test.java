@@ -14,8 +14,8 @@ public class Test {
         notas.add(10);
         notas.add(2);
 
-        System.out.println("Topo da fila: " +notas.peek());// elemento topo da pilha
-        System.out.println(notas.poll());//retirar elemento da fila
+        System.out.println("Topo da fila: " +notas.peek());
+        System.out.println(notas.poll());
         System.out.println(notas);
         System.out.println(notas.isEmpty()?"Fila vazia":"Fila com elementos");//operador um ou outro
 

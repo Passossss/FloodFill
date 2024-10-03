@@ -35,7 +35,7 @@ public class DynamicQueue<T> extends Queue<T> {
 
     private void resize() {
         currentSize *= 2;
-        Object[] newData = new Object[currentSize]; // Novo array de Object
+        Object[] newData = new Object[currentSize];
         System.arraycopy(data, 0, newData, 0, data.length);
         data = newData;
     }

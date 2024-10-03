@@ -2,12 +2,12 @@ package Util;
 
 public class StaticQueue<T> {
     private final int size;
-    private Object[] data; // Uso de Object[] para evitar problemas com genéricos
+    private Object[] data;
     private int top = 0, base = 0;
 
     public StaticQueue(int size) {
         this.size = size;
-        this.data = new Object[this.size]; // Criação do array de Object
+        this.data = new Object[this.size];
     }
 
     public void add(T item) {
@@ -31,13 +31,13 @@ public class StaticQueue<T> {
         if (isEmpty()) {
             throw new IllegalStateException("Queue is empty");
         }
-        T item = (T) data[base]; // Cast explícito
+        T item = (T) data[base];
         base++;
         return item;
     }
 
     public void clear() {
-        this.data = new Object[this.size]; // Criação de um novo array de Object
+        this.data = new Object[this.size];
         this.top = 0;
         this.base = 0;
     }

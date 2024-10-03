@@ -6,7 +6,7 @@ public class DynamicStack<T> {
     private int capacity;
 
     public DynamicStack() {
-        this.capacity = 10; // Capacidade inicial
+        this.capacity = 10;
         this.stack = new Object[capacity];
         this.top = 0;
     }

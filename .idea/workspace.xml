@@ -5,17 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1e4f27ce-3e04-4f37-a546-ba2101ceeaf7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/ImageSlideshow.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ImageViewer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Util/StaticQueue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Aula/DynamicStack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Aula/DynamicStack.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/FloodFill.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FloodFill.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pixels.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Util/Pixels.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Util/DynamicQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Util/DynamicQueue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Util/List.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Util/List.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Util/Queue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Util/Queue.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,26 +44,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.ImageSlideshow.executor": "Run",
-    "Application.Main.executor": "Run",
-    "Application.Test.executor": "Run",
-    "Application.Teste.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/gusap/IdeaProjects/FloodFill",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.ImageSlideshow.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Test.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Teste.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/gusap/IdeaProjects/FloodFill&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\gusap\IdeaProjects\Queue" />

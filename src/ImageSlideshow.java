@@ -11,19 +11,19 @@ public class ImageSlideshow extends JPanel {
 
     public void updateImage(BufferedImage newImage) {
         this.currentImage = newImage;
-        repaint(); // Chama o método paintComponent para atualizar a exibição
+        repaint();
     }
 
     @Override
     protected void paintComponent(Graphics g) {
         super.paintComponent(g);
         if (currentImage != null) {
-            g.drawImage(currentImage, 0, 0, getWidth(), getHeight(), null); // Desenha a imagem no painel
+            g.drawImage(currentImage, 0, 0, getWidth(), getHeight(), null);
         }
     }
 
     @Override
     public Dimension getPreferredSize() {
-        return new Dimension(800, 600); // Define o tamanho preferido do painel
+        return new Dimension(800, 600);
     }
 }
