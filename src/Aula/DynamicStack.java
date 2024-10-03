@@ -1,65 +1,38 @@
 package Aula;
 
-import java.util.NoSuchElementException;
-
 public class DynamicStack<T> {
-    private T[] data;
-    private int count = 0;
-    private int currentStackSize = 3;
+    private Object[] stack;
+    private int top;
+    private int capacity;
 
     public DynamicStack() {
-        this.data = (T[]) new Object[currentStackSize];
-    }
-
-    public int currentSize() {
-        return count;
+        this.capacity = 10; // Capacidade inicial
+        this.stack = new Object[capacity];
+        this.top = 0;
     }
 
     public void push(T item) {
-        if (count >= currentStackSize) {
-            resizeArray();
+        if (top >= capacity) {
+            resize();
         }
-        data[count++] = item;
+        stack[top++] = item;
     }
 
     public T pop() {
         if (isEmpty()) {
-            throw new NoSuchElementException("Stack is empty");
+            throw new IllegalStateException("Stack is empty");
         }
-        T item = data[--count];
-        data[count] = null;
-        return item;
-    }
-
-    public void clear() {
-        count = 0;
-        currentStackSize = 3;
-        data = (T[]) new Object[currentStackSize];
+        return (T) stack[--top];
     }
 
     public boolean isEmpty() {
-        return count == 0;
+        return top == 0;
     }
 
-    public T peek() {
-        if (isEmpty()) {
-            throw new NoSuchElementException("Stack is empty");
-        }
-        return data[count - 1];
-    }
-
-    public void pushRange(T[] items) {
-        if (items.length + count > currentStackSize) {
-            resizeArray();
-        }
-        System.arraycopy(items, 0, data, count, items.length);
-        count += items.length;
-    }
-
-    private void resizeArray() {
-        currentStackSize *= 2;
-        T[] newData = (T[]) new Object[currentStackSize];
-        System.arraycopy(data, 0, newData, 0, count);
-        data = newData;
+    private void resize() {
+        capacity *= 2;
+        Object[] newStack = new Object[capacity];
+        System.arraycopy(stack, 0, newStack, 0, stack.length);
+        stack = newStack;
     }
 }

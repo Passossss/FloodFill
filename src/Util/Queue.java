@@ -1,46 +1,57 @@
 package Util;
 
-import java.util.ArrayList;
-import java.util.NoSuchElementException;
-
 public class Queue<T> {
-    private ArrayList<T> data;
-    private int base = 0;
+    private Object[] data; // Uso de Object[] para compatibilidade com tipos genéricos
+    private int base = 0, top = 0, size = 5; // Definição inicial do tamanho
 
     public Queue() {
-        data = new ArrayList<>();
+        data = new Object[size]; // Inicializando o array
     }
 
     public void add(T item) {
-        data.add(item);
+        if (top >= size) {
+            resize();
+        }
+        data[top++] = item;
     }
 
     public void addRange(T[] items) {
-        for (T item : items) {
-            add(item);
+        while (top + items.length > size) {
+            resize();
         }
+        System.arraycopy(items, 0, data, top, items.length);
+        top += items.length;
     }
 
     public T remove() {
         if (isEmpty()) {
-            throw new NoSuchElementException("Queue is empty");
+            throw new IllegalStateException("Queue is empty");
         }
-        T temp = data.get(base);
-        base++; // Avança o índice da base
+        T temp = (T) data[base]; // Cast explícito
+        base++;
         return temp;
     }
 
     public void clear() {
-        data.clear();
-        base = 0;
+        data = new Object[size]; // Recriação do array
+        base = top = 0;
     }
 
     public boolean isEmpty() {
-        return base >= data.size();
+        return base == top;
     }
 
     public int currentSize() {
-        return data.size() - base;
+        return top - base;
+    }
+
+    private void resize() {
+        size *= 2;
+        Object[] newData = new Object[size];
+        System.arraycopy(data, base, newData, 0, top - base);
+        top -= base;
+        base = 0;
+        data = newData;
     }
 
     @Override

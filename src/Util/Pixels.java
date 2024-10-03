@@ -1,3 +1,5 @@
+package Util;
+
 public class Pixels {
         public int x, y;
 

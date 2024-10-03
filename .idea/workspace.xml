@@ -5,9 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1e4f27ce-3e04-4f37-a546-ba2101ceeaf7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Util/List.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Util/Queue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ImageSlideshow.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ImageViewer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Util/StaticQueue.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Aula/DynamicStack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Aula/DynamicStack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FloodFill.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FloodFill.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pixels.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Util/Pixels.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Util/DynamicQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Util/DynamicQueue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Util/List.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Util/List.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Util/Queue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Util/Queue.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,11 +56,14 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.ImageSlideshow.executor": "Run",
     "Application.Main.executor": "Run",
     "Application.Test.executor": "Run",
+    "Application.Teste.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/gusap/IdeaProjects/FloodFill",
     "node.js.detected.package.eslint": "true",
@@ -89,10 +100,24 @@
       <workItem from="1727024199866" duration="2619000" />
       <workItem from="1727026885797" duration="28000" />
       <workItem from="1727026982067" duration="5706000" />
+      <workItem from="1727179583769" duration="5912000" />
+      <workItem from="1727210008670" duration="156000" />
+      <workItem from="1727969583569" duration="3422000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

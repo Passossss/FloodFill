@@ -1,12 +1,12 @@
 package Util;
 
-import java.util.NoSuchElementException;
-
 public class DynamicQueue<T> extends Queue<T> {
     private int currentSize = 5;
+    private Object[] data;
+    private int top = 0, base = 0;
 
     public DynamicQueue() {
-        this.data = (T[]) new Object[currentSize];
+        this.data = new Object[currentSize];
     }
 
     @Override
@@ -29,14 +29,21 @@ public class DynamicQueue<T> extends Queue<T> {
     @Override
     public void clear() {
         currentSize = 5;
-        data = (T[]) new Object[currentSize];
+        data = new Object[currentSize];
         top = base = 0;
     }
 
     private void resize() {
         currentSize *= 2;
-        T[] newData = (T[]) new Object[currentSize];
+        Object[] newData = new Object[currentSize]; // Novo array de Object
         System.arraycopy(data, 0, newData, 0, data.length);
         data = newData;
+    }
+
+    public T get(int index) {
+        if (index < 0 || index >= top) {
+            throw new IndexOutOfBoundsException("Index inválido.");
+        }
+        return (T) data[index];
     }
 }
