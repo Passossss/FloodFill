@@ -9,9 +9,9 @@ import java.io.IOException;
 import java.util.Scanner;
 
 
-// Classe Main
-public class Main {
-    public static void main(String[] args) {
+// Classe ColoracaoFila
+public class ColoracaoFila {
+    public static void executar() {
         JFrame frame = new JFrame("Coloração de Imagem");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setSize(800, 600);
@@ -21,7 +21,7 @@ public class Main {
 
         try {
             // Carregar a imagem
-            imagem = ImageIO.read(new File("C:\\Users\\gusap\\IdeaProjects\\FloodFill\\src\\Fila\\imagemJava.png"));
+            imagem = ImageIO.read(new File("C:\\Users\\morov\\OneDrive\\Área de Trabalho\\Java\\FloodFill\\src\\Fila\\imagemJava.png"));
         } catch (IOException e) {
             System.out.println("Erro ao carregar a imagem: " + e.getMessage());
             return;
