@@ -9,7 +9,6 @@ import java.io.IOException;
 import java.util.Scanner;
 
 
-// Classe ColoracaoFila
 public class ColoracaoFila {
     public static void executar() {
         JFrame frame = new JFrame("Coloração de Imagem");
@@ -20,8 +19,7 @@ public class ColoracaoFila {
         BufferedImage imagem = null;
 
         try {
-            // Carregar a imagem
-            imagem = ImageIO.read(new File("C:\\Users\\morov\\OneDrive\\Área de Trabalho\\Java\\FloodFill\\src\\Fila\\imagemJava.png"));
+            imagem = ImageIO.read(new File("C:\\Users\\gusap\\IdeaProjects\\FloodFill\\src\\Fila\\imagemJava.png"));
         } catch (IOException e) {
             System.out.println("Erro ao carregar a imagem: " + e.getMessage());
             return;
@@ -31,22 +29,19 @@ public class ColoracaoFila {
         frame.add(imagePanel);
         frame.setVisible(true);
 
-        // Solicitar ao usuário as coordenadas do pixel
         System.out.print("Informe a coordenada x do pixel: ");
         int x = scanner.nextInt();
         System.out.print("Informe a coordenada y do pixel: ");
         int y = scanner.nextInt();
 
-        // Verificar se as coordenadas estão dentro dos limites da imagem
         if (x < 0 || x >= imagem.getWidth() || y < 0 || y >= imagem.getHeight()) {
             System.out.println("Coordenadas fora dos limites da imagem.");
             return;
         }
 
-        Color novaCor = Color.RED; // Cor para colorir (vermelho)
+        Color novaCor = Color.RED;
         ColorirImagem colorirImagem = new ColorirImagem(imagem, novaCor);
 
-        // Executar flood fill com Fila
         colorirImagem.floodFillComFila(x, y, imagePanel);
 
         System.out.println("Processo de coloração concluído.");

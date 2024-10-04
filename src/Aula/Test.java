@@ -17,7 +17,7 @@ public class Test {
         System.out.println("Topo da fila: " +notas.peek());
         System.out.println(notas.poll());
         System.out.println(notas);
-        System.out.println(notas.isEmpty()?"Fila vazia":"Fila com elementos");//operador um ou outro
+        System.out.println(notas.isEmpty()?"Fila vazia":"Fila com elementos");
 
 
     }

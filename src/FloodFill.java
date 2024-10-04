@@ -1,14 +1,16 @@
 import Util.Pixels;
-import java.awt.Color;
+import Aula.DynamicStack;
+import javax.swing.*;
+import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
 import javax.imageio.ImageIO;
-import Aula.DynamicStack;
 
 public class FloodFill {
     private BufferedImage image;
     private ImageSlideshow slideshow;
+    private int delay = 10;
 
     public FloodFill(String imagePath, ImageSlideshow slideshow) throws IOException {
         File file = new File(imagePath);
@@ -16,18 +18,30 @@ public class FloodFill {
         this.slideshow = slideshow;
     }
 
-    public void applyFloodFill(Pixels initialPixel, Color newColor) throws IOException {
+    public void applyFloodFill(Pixels initialPixel, Color newColor) {
         int initialColorRGB = image.getRGB(initialPixel.x, initialPixel.y);
         Color initialColor = new Color(initialColorRGB);
         DynamicStack<Pixels> stack = new DynamicStack<>();
         stack.push(initialPixel);
 
-        while (!stack.isEmpty()) {
-            Pixels pixel = stack.pop();
-            recolorizePixel(pixel, newColor);
-            addAdjacentPixels(pixel, initialColor, stack);
+        Timer timer = new Timer(delay, e -> {
+            int pixelsPerTick = 200;
+            int processed = 0;
+
+            while (!stack.isEmpty() && processed < pixelsPerTick) {
+                Pixels pixel = stack.pop();
+                recolorizePixel(pixel, newColor);
+                addAdjacentPixels(pixel, initialColor, stack);
+                processed++;
+            }
+
             slideshow.updateImage(image);
-        }
+
+            if (stack.isEmpty()) {
+                ((Timer) e.getSource()).stop();
+            }
+        });
+        timer.start();
     }
 
     private void addAdjacentPixels(Pixels pixel, Color initialColor, DynamicStack<Pixels> stack) {

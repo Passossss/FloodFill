@@ -6,7 +6,7 @@ import java.io.IOException;
 
 public class ColoracaoStack {
     public static void executar(){
-        String imagePath = "C:\\Users\\morov\\OneDrive\\Área de Trabalho\\Java\\FloodFill\\flood.png";
+        String imagePath = "C:\\Users\\gusap\\IdeaProjects\\FloodFill\\flood.png";
         JFrame frame = new JFrame("Flood Fill Animation");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 

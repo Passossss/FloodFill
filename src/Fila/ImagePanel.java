@@ -13,7 +13,7 @@ public class ImagePanel extends JPanel {
 
     public void setImagem(BufferedImage imagem) {
         this.imagem = imagem;
-        repaint(); // Chamar repaint para atualizar o painel
+        repaint();
     }
 
     @Override
