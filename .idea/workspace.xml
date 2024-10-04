@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1e4f27ce-3e04-4f37-a546-ba2101ceeaf7" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/FloodFill.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FloodFill.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,6 +68,9 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\gusap\IdeaProjects\Queue" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\gusap\IdeaProjects\FloodFill\src" />
+    </key>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -93,6 +96,9 @@
       <workItem from="1727179583769" duration="5912000" />
       <workItem from="1727210008670" duration="156000" />
       <workItem from="1727969583569" duration="3422000" />
+      <workItem from="1727999821323" duration="2392000" />
+      <workItem from="1728045037549" duration="21000" />
+      <workItem from="1728048808066" duration="541000" />
     </task>
     <servers />
   </component>
@@ -109,5 +115,16 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Fila/ColorirImagem.java</url>
+          <line>15</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
